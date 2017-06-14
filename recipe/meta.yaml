@@ -24,6 +24,7 @@ requirements:
     
   run:
     - python
+    - setuptools
     - requests >=2.5.1,!=2.6.1,!=2.16.0,!=2.16.1
     - six >=1.3.0
     - urllib3
