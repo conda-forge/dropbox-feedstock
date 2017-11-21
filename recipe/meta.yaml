@@ -46,8 +46,6 @@ about:
     dropbox is a Python SDK for integrating with the Dropbox API v2.
     Compatible with Python 2.7 and 3.4+. Documentation is available on
     Read the Docs.
-  doc_url: http://dropbox-sdk-python.readthedocs.org/
-  dev_url: https://github.com/dropbox/dropbox-sdk-python
 
 extra:
   recipe-maintainers:
