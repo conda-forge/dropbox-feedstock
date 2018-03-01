@@ -1,6 +1,6 @@
 {% set name = "dropbox" %}
-{% set version = "8.4.0" %}
-{% set sha256 = "9709c2af6d0198f87b2506f23dd0b835128d7bedb007d40a9e004c594a664550" %}
+{% set version = "8.7.1" %}
+{% set sha256 = "019f1529631d335f2b57ffd65a4545406bd3d139d0a9611cb6ca8c66c4ae7309" %}
 {% set build = 0 %}
 
 package:
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
