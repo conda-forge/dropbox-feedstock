@@ -1,28 +1,23 @@
-{% set name = "dropbox" %}
 {% set version = "8.7.1" %}
-{% set sha256 = "019f1529631d335f2b57ffd65a4545406bd3d139d0a9611cb6ca8c66c4ae7309" %}
-{% set build = 0 %}
 
 package:
-  name: {{ name|lower }}
+  name: dropbox
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/d/dropbox/dropbox-{{ version }}.tar.gz
+  sha256: 019f1529631d335f2b57ffd65a4545406bd3d139d0a9611cb6ca8c66c4ae7309
 
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - pytest-runner
-
   run:
     - python
     - setuptools
