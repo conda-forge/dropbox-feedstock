@@ -1,4 +1,4 @@
-{% set version = "9.4.0" %}
+{% set version = "10.1.1" %}
 
 package:
   name: dropbox
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dropbox/dropbox-{{ version }}.tar.gz
-  sha256: 436e0eee932d849879dd4c35e583a692dfb8ad360e81763fa1cb288b49022d62
+  sha256: 761d6b7e2f642d542d4872773b8034d41738d50eae4949fd1af3d6a389e13a01
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Official Dropbox API Client'
+  summary: Official Dropbox API Client
   dev_url: https://github.com/dropbox/dropbox-sdk-python
   doc_url: https://dropbox-sdk-python.readthedocs.io/en/latest/
 
