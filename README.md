@@ -5,7 +5,7 @@ Home: https://github.com/dropbox/dropbox-sdk-python
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Official Dropbox API Client
 
