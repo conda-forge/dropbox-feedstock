@@ -5,9 +5,13 @@ Home: https://github.com/dropbox/dropbox-sdk-python
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dropbox-feedstock/blob/master/LICENSE.txt)
 
 Summary: Official Dropbox API Client
+
+Development: https://github.com/dropbox/dropbox-sdk-python
+
+Documentation: https://dropbox-sdk-python.readthedocs.io/en/latest/
 
 dropbox is a Python SDK for integrating with the Dropbox API v2.
 Compatible with Python 2.7 and 3.4+. Documentation is available on
