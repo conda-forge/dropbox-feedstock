@@ -1,4 +1,4 @@
-{% set version = "10.9.0" %}
+{% set version = "10.10.0" %}
 
 package:
   name: dropbox
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dropbox/dropbox-{{ version }}.tar.gz
-  sha256: 5effaf1bd009eaa92ea8155567f83ea0fadc55261e451f387f2f7955fff4b031
+  sha256: df43e9e0bdcae6d610dd754a5ec72f2f91a311bbc2c8a28d076df69695b18398
 
 build:
   noarch: python
