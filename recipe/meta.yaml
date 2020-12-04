@@ -1,4 +1,4 @@
-{% set version = "10.9.0" %}
+{% set version = "10.11.0" %}
 
 package:
   name: dropbox
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dropbox/dropbox-{{ version }}.tar.gz
-  sha256: 5effaf1bd009eaa92ea8155567f83ea0fadc55261e451f387f2f7955fff4b031
+  sha256: aa7771998ff9c7d2583ff06149c6823308f829e900526c483b8fb67df7effdc6
 
 build:
   noarch: python
@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - pytest-runner
