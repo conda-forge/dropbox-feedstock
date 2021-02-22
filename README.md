@@ -1,7 +1,7 @@
 About dropbox
 =============
 
-Home: https://github.com/dropbox/dropbox-sdk-python
+Home: http://www.dropbox.com/developers
 
 Package license: MIT
 
@@ -13,10 +13,7 @@ Development: https://github.com/dropbox/dropbox-sdk-python
 
 Documentation: https://dropbox-sdk-python.readthedocs.io/en/latest/
 
-dropbox is a Python SDK for integrating with the Dropbox API v2.
-Compatible with Python 2.7 and 3.4+. Documentation is available on
-Read the Docs.
-
+The Official Dropbox API V2 SDK for Python
 
 Current build status
 ====================
@@ -123,5 +120,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@BastianZim](https://github.com/BastianZim/)
 * [@guillochon](https://github.com/guillochon/)
 
