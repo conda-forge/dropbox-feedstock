@@ -1,5 +1,5 @@
 {% set name = "dropbox" %}
-{% set version = "11.2.0" %}
+{% set version = "11.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d52f6387ff2eb8e90c95e989b6d43e1fd588b48b7b0e447c9c705a33cff88656
+  sha256: efd6ffa63bee6e88ced047cac97229c2677c28cee722dc7795617307ec5085b8
 
 build:
   number: 0
