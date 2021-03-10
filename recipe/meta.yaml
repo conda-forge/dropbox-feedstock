@@ -1,5 +1,5 @@
 {% set name = "dropbox" %}
-{% set version = "11.4.0" %}
+{% set version = "11.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/dropbox/dropbox-sdk-python/archive/v{{ version }}.tar.gz
-  sha256: 16c47f44327936296fa9b0dc2ae00cffae7d929b2ec87eb1e36aa7a6349868ed
+  sha256: 5db4f1bcece589f5f3f6cd6c5f8e0950f06e97384fa3cc2be127f86f698c07dd
 
 build:
   number: 0
@@ -21,16 +21,10 @@ requirements:
     - pytest-runner ==5.2.0
     - python =2.7|>=3.4
   run:
-    - ply
-    - pytest
-    - pytest-runner
     - python =2.7|>=3.4
-    - requests
-    - six ==1.14.0
+    - requests >=2.16.2
+    - six >=1.12.0
     - stone >=2
-    - sphinx
-    - twine
-    - wheel
 
 test:
   imports:
