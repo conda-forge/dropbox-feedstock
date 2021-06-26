@@ -1,5 +1,5 @@
 {% set name = "dropbox" %}
-{% set version = "11.11.0" %}
+{% set version = "11.12.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/dropbox/dropbox-sdk-python/archive/v{{ version }}.tar.gz
-  sha256: 0c5371f7a37b310d4cfd7443752fb122110aaaaf14e9561510740eb58572f3a8
+  sha256: 1d66c8c89fe3360d6eb639d8628b0d97b0780665cdfa439427bed67adf4212a7
 
 build:
   number: 0
@@ -37,7 +37,7 @@ test:
     - coverage
     - pytest
     - coverage
-    - stone>=2.*
+    - stone >=2.*
   imports:
     - dropbox
   commands:
