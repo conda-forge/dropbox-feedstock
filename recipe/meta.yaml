@@ -13,18 +13,18 @@ source:
 build:
   number: 0
   skip: True  # [win]
-  noarch: python
+  # noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - pytest-runner ==5.2.0
-    - python =2.7|>=3.4
+    - python
     - wheel
     - setuptools
   run:
-    - python =2.7|>=3.4
+    - python
     - requests >=2.16.2
     - six >=1.12.0
     - stone >=2.*
