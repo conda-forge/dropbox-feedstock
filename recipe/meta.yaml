@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   skip: True  # [win]
-  # noarch: python
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,13 +24,14 @@ requirements:
     - wheel
     - setuptools
   run:
-    - python
+    - python >=3.7
     - requests >=2.16.2
     - six >=1.12.0
     - stone >=2.*
 
 test:
   requires:
+    - python <3.10
     - pip
     - mock
     - pytest-mock
