@@ -1,5 +1,5 @@
 {% set name = "dropbox" %}
-{% set version = "11.14.0" %}
+{% set version = "11.25.0" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/dropbox/dropbox-sdk-python/archive/v{{ version }}.tar.gz
-  sha256: 010763f8536364af14b72d6c7380b839a5eadb3e7bfb99a2b76f6ab003f7989d
+  sha256: 54bfe5902b8cb26d2f70b2ee8bda92cd61a084d1672e19af3d60d04a36e8bee1
 
 build:
   number: 0
   skip: True  # [win]
-  # noarch: python
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,13 +24,14 @@ requirements:
     - wheel
     - setuptools
   run:
-    - python
+    - python >=3.7
     - requests >=2.16.2
     - six >=1.12.0
     - stone >=2.*
 
 test:
   requires:
+    - python <3.10
     - pip
     - mock
     - pytest-mock
