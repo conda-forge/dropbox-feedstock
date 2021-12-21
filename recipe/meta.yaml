@@ -12,7 +12,6 @@ source:
 
 build:
   number: 0
-  skip: True  # [win]
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,7 +23,7 @@ requirements:
     - wheel
     - setuptools
   run:
-    - python >=3.7
+    - python
     - requests >=2.16.2
     - six >=1.12.0
     - stone >=2.*
@@ -36,9 +35,6 @@ test:
     - mock
     - pytest-mock
     - coverage
-    - pytest
-    - coverage
-    - stone >=2.*
   imports:
     - dropbox
   commands:
