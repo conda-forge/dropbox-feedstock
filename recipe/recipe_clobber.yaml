@@ -1,2 +1,2 @@
 build:
-  noarch: false
+  noarch: true
