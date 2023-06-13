@@ -1,11 +1,11 @@
-About dropbox
-=============
+About dropbox-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dropbox-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.dropbox.com/developers
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dropbox-feedstock/blob/main/LICENSE.txt)
 
 Summary: Official Dropbox API Client
 
