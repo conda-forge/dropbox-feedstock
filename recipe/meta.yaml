@@ -1,5 +1,6 @@
 {% set name = "dropbox" %}
 {% set version = "12.2.1" %}
+{% set python_min = "3.11" %}
 
 
 package:
