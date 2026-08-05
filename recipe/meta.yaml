@@ -20,8 +20,8 @@ build:
 requirements:
   host:
     - pip
-    - setuptools> =77
-    - setuptools-scm>=8,<9
+    - setuptools >=77
+    - setuptools-scm >=8,<9
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
